@@ -4,6 +4,7 @@ import axios from 'axios';
 import Login from './components/Login/Login';
 import Budget from './components/Budget/Budget';
 import './App.css';
+import { connect } from 'react-redux';
 
 class App extends Component {
 
@@ -19,4 +20,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect()(App);
